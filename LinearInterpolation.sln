@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinearInterpolation", "LinearInterpolation\LinearInterpolation.csproj", "{1726FC45-86D1-4C31-AF5C-68DA5B32FC35}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinearInterpolation.Tests", "LinearInterpolation.Tests\LinearInterpolation.Tests.csproj", "{071E83AD-9A9F-40C0-A54C-223E4F642F1C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1726FC45-86D1-4C31-AF5C-68DA5B32FC35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1726FC45-86D1-4C31-AF5C-68DA5B32FC35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1726FC45-86D1-4C31-AF5C-68DA5B32FC35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1726FC45-86D1-4C31-AF5C-68DA5B32FC35}.Release|Any CPU.Build.0 = Release|Any CPU
+		{071E83AD-9A9F-40C0-A54C-223E4F642F1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{071E83AD-9A9F-40C0-A54C-223E4F642F1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{071E83AD-9A9F-40C0-A54C-223E4F642F1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{071E83AD-9A9F-40C0-A54C-223E4F642F1C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
