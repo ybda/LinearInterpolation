@@ -6,18 +6,32 @@ public static class Program
 {
     private static void Main()
     {
-        var currentRange = new Range<decimal>(4, 20);
-        var temperatureRange = new Range<decimal>(-50, 50);
-
-        decimal inputCurrent = 6.0m; 
-        var temperature = Interpolate(inputCurrent, currentRange, temperatureRange);
-
-        Console.WriteLine($"The temperature for {inputCurrent:F2} mA is {temperature:F2} °C.");
+        var range1 = new Range<decimal>(0, 5);
+        const string range1Name = "mA";
         
-        decimal inputTemperature = -40.0m; 
-        var current = Interpolate(inputTemperature, temperatureRange, currentRange);
+        var range2 = new Range<decimal>(-200, 110);
+        const string range2Name = "°C";
 
-        Console.WriteLine($"The current for {inputTemperature:F2} °C is {current:F2} mA.");
+        const decimal input = -167.0m;
+        const string inputName = range2Name;
+        
+        
+        
+        bool isReversed = inputName == range2Name;
+        
+        string printString = !isReversed ? 
+            InterpolationToString(input, range1, range1Name, range2, range2Name) 
+            : InterpolationToString(input, range2, range2Name, range1, range1Name);
+        
+        Console.WriteLine(printString);
+    }
+
+    private static string InterpolationToString(decimal input, 
+        Range<decimal> range1, string range1Name, 
+        Range<decimal> range2, string range2Name)
+    {
+        var output = Interpolate(input, range1, range2);
+        return $"{input:F2} {range1Name} = {output:F2} {range2Name}";
     }
     
     public static decimal Interpolate(decimal input, Range<decimal> inputRange, Range<decimal> outputRange)
