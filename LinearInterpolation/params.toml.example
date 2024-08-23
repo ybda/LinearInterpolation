@@ -1,0 +1,10 @@
+﻿range1.name = "mA"
+range1.range.min = 4
+range1.range.max = 20
+
+range2.name = "°C"
+range2.range.min = -72
+range2.range.max = 12
+
+input = 8.5
+input_range_number = 1
