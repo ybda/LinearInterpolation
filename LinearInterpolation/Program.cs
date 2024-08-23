@@ -13,13 +13,11 @@ public static class Program
         const string range2Name = "°C";
 
         const decimal input = -167.0m;
-        const string inputName = range2Name;
+        const int inputRangeNumber = 2;
         
         
         
-        bool isReversed = inputName == range2Name;
-        
-        string printString = !isReversed ? 
+        string printString = inputRangeNumber == 1 ?
             InterpolationToString(input, range1, range1Name, range2, range2Name) 
             : InterpolationToString(input, range2, range2Name, range1, range1Name);
         
